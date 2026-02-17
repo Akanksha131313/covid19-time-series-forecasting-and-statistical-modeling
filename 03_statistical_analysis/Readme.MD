@@ -5,7 +5,9 @@
 
 • Perform statistical validation of pandemic indicators to assess severity, growth dynamics, and inter-variable relationships before forecasting implementation.
 
-• Analytical Scope
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Analytical Scope -**
 
 • Case Fatality Rate (CFR) computation
 
