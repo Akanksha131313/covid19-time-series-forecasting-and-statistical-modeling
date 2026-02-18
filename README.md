@@ -26,45 +26,37 @@ Outputs: Structured CSVs, trend tables, console insights, optional forecast over
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Module Summary-**
-
 ______________________________________________________________________________________________________________________________________________________________________________
-Module                                         |                Purpose	                                              |       Output / Impact
-_______________________________________________________________________________________________________________________________________________________________________________
-01_Data                                        |             Load & clean dataset	                                    |      Clean CSV; reproducible workflow
-                                               |                                                                      |
-02_exploratory_analysis	                       |             Rolling trends, state-wise EDA	                          |      Tabular trends highlighting surges/recoveries
-                                               |                                                                      |
-03_statistical_analysis	                       |             CFR, infection rate, growth factor	                      |      Validated pandemic metrics
-                                               |                                                                      |
-04_feature_engineering	                       |             Lag, rolling averages, population-normalized metrics	    |      Enhanced features for modeling
-                                               |                                                                      |
-05_modeling	                                   |            Regression / time-series models	                          |      Forecast-ready, state-level granularity
-                                               |                                                                      |
-06_model_evaluation	                           |            MAE & leakage-free validation	                            |      Confirms forecast reliability
-                                               |                                                                      |
-07_forecasting	                               |            Prophet-based 30-day Total Cases	                        |      Forecast CSV; summary table for top-risk states
-                                               |                                                                      |                                     
-08_reports	                                   |            State-wise reporting	                                    |      Summary CSV, trend tables, console insights;                                                      |                                                                      |        optional forecast overlay
-                                               |                                                                      |
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+| Module                  | Purpose                                              | Output / Impact                                                        |
+| ----------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------- |
+| 01_Data                 | Load & clean dataset                                 | Clean CSV; reproducible workflow                                       |
+| 02_exploratory_analysis | Rolling trends, state-wise EDA                       | Tabular trends highlighting surges/recoveries                          |
+| 03_statistical_analysis | CFR, infection rate, growth factor                   | Validated pandemic metrics                                             |
+| 04_feature_engineering  | Lag, rolling averages, population-normalized metrics | Enhanced features for modeling                                         |
+| 05_modeling             | Regression / time-series models                      | Forecast-ready, state-level granularity                                |
+| 06_model_evaluation     | MAE & leakage-free validation                        | Confirms forecast reliability and accuracy                             |
+| 07_forecasting          | Prophet-based 30-day Total Cases                     | Forecast CSV; summary table for top-risk states                        |
+| 08_reports              | State-wise reporting                                 | Summary CSV, trend tables, console insights; optional forecast overlay |
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Top Summary Table (Simulated Visual Insight) -**
 
 -> This table mimics plots and shows key metrics + forecast % change for fast recruiter scanning:
 
-State            	Total Cases	    Active Cases	 Recoveries	  Deaths	   Max New Cases	   30d Forecast
-_____________________________________________________________________________________________________________________________
+| State       | Total Cases | Active Cases | Recoveries | Deaths  | Max New Cases     | 30d Forecast |
+| ----------- | ----------- | ------------ | ---------- | ------- | ----------------- | ------------ |
+| Maharashtra | 3,200,000   | 80,000       | 3,000,000  | 120,000 | ██████████ 12,000 | +10%         |
+| Kerala      | 1,100,000   | 20,000       | 1,050,000  | 30,000  | ██████ 5,000      | +7%          |
+| Delhi       | 900,000     | 15,000       | 870,000    | 15,000  | █████ 4,500       | +5%          |
 
-Maharashtra     	3,200,000	      80,000	       3,000,000	  120,000  	██████████12,000	 +10%
 
-Kerala	          1,100,000	      20,000	       1,050,000	 30,000    	██████5,000	       +7%
-
-Delhi	            900,000	        15,000	       870,000	   15,000    	█████4,500	       +5%
 
 **Why it matters:** Top-risk states, peak daily cases, and forecast trends are visible immediately without actual plots.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+  
 **Key Outputs -**
 
 • Summary CSVs per state: Total Cases, Deaths, Recoveries, Active Cases
