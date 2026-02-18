@@ -27,24 +27,25 @@ Outputs: Structured CSVs, trend tables, console insights, optional forecast over
 
 **Module Summary-**
 
-Module                                                         Purpose	                                               Output / Impact
+______________________________________________________________________________________________________________________________________________________________________________
+Module                                         |                Purpose	                                              |       Output / Impact
 _______________________________________________________________________________________________________________________________________________________________________________
-01_Data                                                   	Load & clean dataset	                                  Clean CSV; reproducible workflow
-
-02_exploratory_analysis	                                    Rolling trends, state-wise EDA	                        Tabular trends highlighting surges/recoveries
-
-03_statistical_analysis	                                    CFR, infection rate, growth factor	                    Validated pandemic metrics
-
-04_feature_engineering	                                    Lag, rolling averages, population-normalized metrics	  Enhanced features for modeling
-
-05_modeling	                                                Regression / time-series models	                        Forecast-ready, state-level granularity
-
-06_model_evaluation	                                        MAE & leakage-free validation	                          Confirms forecast reliability
-
-07_forecasting	                                            Prophet-based 30-day Total Cases	                      Forecast CSV; summary table for top-risk states
-
-08_reports	                                                State-wise reporting	                                  Summary CSV, trend tables, console insights; optional                                                                                                                           forecast overlay
-
+01_Data                                        |             Load & clean dataset	                                    |      Clean CSV; reproducible workflow
+                                               |                                                                      |
+02_exploratory_analysis	                       |             Rolling trends, state-wise EDA	                          |      Tabular trends highlighting surges/recoveries
+                                               |                                                                      |
+03_statistical_analysis	                       |             CFR, infection rate, growth factor	                      |      Validated pandemic metrics
+                                               |                                                                      |
+04_feature_engineering	                       |             Lag, rolling averages, population-normalized metrics	    |      Enhanced features for modeling
+                                               |                                                                      |
+05_modeling	                                   |            Regression / time-series models	                          |      Forecast-ready, state-level granularity
+                                               |                                                                      |
+06_model_evaluation	                           |            MAE & leakage-free validation	                            |      Confirms forecast reliability
+                                               |                                                                      |
+07_forecasting	                               |            Prophet-based 30-day Total Cases	                        |      Forecast CSV; summary table for top-risk states
+                                               |                                                                      |                                     
+08_reports	                                   |            State-wise reporting	                                    |      Summary CSV, trend tables, console insights;                                                      |                                                                      |        optional forecast overlay
+                                               |                                                                      |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Top Summary Table (Simulated Visual Insight) -**
